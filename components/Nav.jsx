@@ -68,7 +68,7 @@ const Nav = () => {
           </>
         )}
       </div>
-      <div className="sm:hidden flex relative">
+      <div className="sm:hidden flex relative cursor-pointer">
         {session?.user ? (
           <div className="flex">
             <Image
@@ -95,7 +95,7 @@ const Nav = () => {
                   My Profile
                 </Link>
                 <Link
-                  href="/profile"
+                  href="/create-prompt"
                   className="dropdown_link"
                   onClick={() => {
                     setToggleDropdown(false);
